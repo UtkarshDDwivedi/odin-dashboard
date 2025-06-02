@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Baloo Bhai 2", sans-serif;
 }
 
 body {
@@ -81,10 +84,20 @@ body {
     height: 40px;
 }
 
+.search label {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
 .profile {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.profile img:first-child {
+    cursor: pointer;
 }
 
 .profile img:nth-child(2) {
@@ -108,7 +121,6 @@ body {
 .greetings-text {
     display: flex;
     flex-direction: column;
-    gap: 4px;
 }
 
 .greetings p:nth-child(1) {
@@ -117,6 +129,7 @@ body {
 
 .greetings-text p:nth-child(2) {
     font-size: 2.1rem;
+    margin-top: -10px;
 }
 
 .buttons {
@@ -149,6 +162,9 @@ body {
     gap: 25px;
 }
 
+.projects h1 {
+    font-size: 1.5rem;
+}
 .projects :first-child {
     grid-column: 1 / 3;
     display: flex;
@@ -177,9 +193,17 @@ body {
     margin: 0 25px 15px 0;
 }
 
-.cards h2,
-.cards p {
+.cards h2 {
     padding: 25px;
+}
+
+.cards p {
+    padding: 0 25px;
+    font-size: 1.1rem;
+}
+
+.cards h2 {
+ font-size: 1.7rem;
 }
 
 a {
@@ -191,7 +215,7 @@ a {
     padding: 0 25px;
     display: flex;
     flex-direction: column;
-    gap: 26px;
+    gap: 16px;
 }
 
 .message-card {
@@ -209,6 +233,7 @@ a {
     flex-direction: column;
     gap: 15px;
 }
+
 ul li {
     list-style: disclosure-closed;
 }

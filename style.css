@@ -25,6 +25,13 @@ body {
     background: #e0dee7;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding: 25px;
+    font-size: 1.4rem;
+    height: 215px;
+    gap: 17px;
 }
 
 .main {
@@ -48,10 +55,82 @@ body {
     filter: invert(1);
 }
 
-.title img{
+.title img {
     width: 65px;
 }
 
 .title {
     font-size: 2.1rem;
+}
+
+.navbar img {
+    width: 25px;
+}
+
+.search {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.search input {
+    border: none;
+    border-radius: 50px;
+    width: 500px;
+    height: 40px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile img:nth-child(2) {
+    width: 65px;
+    border-radius: 50%;
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-left: 10px;
+}
+
+.greetings img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+}
+
+.greetings-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.greetings p:nth-child(1) {
+    font-size: 1.2rem;
+}
+
+.greetings-text p:nth-child(2) {
+    font-size: 2.1rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.buttons button {
+    width: 125px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.2rem;
+    background: #7965C1;
+    color: white;
 }
